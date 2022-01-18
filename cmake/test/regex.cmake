@@ -1,0 +1,22 @@
+
+macro(test_reg_replace name_lib)
+	bmf_lib_version_replace(${name_lib} "cloud_" "new_name" "3" "2" "1")
+	message("${name_lib}   ===>   ${new_name}")
+	set(new_name "")
+endmacro()
+
+test_reg_replace("cloud_io.lib")
+test_reg_replace("cloud_io.so")
+test_reg_replace("cloud_io211.so")
+test_reg_replace("cloud_io211_d.so")
+test_reg_replace("cloud_io.so.2.1.1")
+test_reg_replace("cloud_io211_d.so.2.1.1")
+
+test_reg_replace("libcloud_io.lib")
+test_reg_replace("libcloud_io.so")
+test_reg_replace("libcloud_io211.so")
+test_reg_replace("libcloud_io211_d.so")
+test_reg_replace("libcloud_io.so.2.1.1")
+test_reg_replace("libcloud_io211_d.so.2.1.1")
+test_reg_replace("libcloud_io.so.2")
+test_reg_replace("libcloud_io.so.2.1")

@@ -1,0 +1,9 @@
+/.vs
+/.git
+/.vscode
+/out
+/build
+/install
+/.stfolder
+.stignore
+/.idea

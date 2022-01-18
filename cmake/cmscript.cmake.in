@@ -1,0 +1,7 @@
+# cmake_policy(SET CMP0054 NEW)
+
+if(NOT DEFINED cmscript_FOUND OR NOT cmscript_FOUND)
+	include(@CMAKE_SOURCE_DIR@/cmake/entry.cmake)
+	bm_import(@CMAKE_SOURCE_DIR@)
+	set(cmscript_FOUND ON)
+endif()

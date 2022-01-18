@@ -1,0 +1,10 @@
+
+set(TEST_BOOL ON)
+set(tpl1 "A" "B" "C" "A" "D" "B")
+set(tpl2 "A" "B" "C" "A" "D" "B")
+test_bool_mac(TEST_BOOL)
+test_bool_func(${TEST_BOOL})
+test_list_mac(tpl1)
+test_list_mac(${tpl1})
+test_list_func(tpl2)
+test_list_func(${tpl2})

@@ -1,0 +1,17 @@
+-Wall
+-lpthread 
+-lm 
+-Wno-sign-compare 
+-Wno-unused-result
+-Wno-unused-parameter
+-Wno-unused-variable
+-Wfatal-errors
+-Wno-deprecated-declarations
+-Wno-write-strings
+-Wno-unknown-pragmas
+-Wno-pedantic
+-Wno-pessimizing-move
+-Wno-deprecated-copy
+-Wno-pedantic
+-Wno-class-memaccess
+-Wno-reorder
