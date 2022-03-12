@@ -1,0 +1,22 @@
+
+include("@DIR_CMAKE_INSTALL@/@FILE_CMAKE_TARGETS@")
+
+include("@CMAKE_SOURCE_DIR@/cmake/config.cmake")
+
+set(template_USE_SPDLOG @template_USE_SPDLOG@)
+set(template_USE_PERFTOOLS @template_USE_PERFTOOLS@)
+
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} @CMAKE_SOURCE_DIR@/cmake/Modules)
+
+set(template_USE_FLAGS @template_USE_FLAGS@)
+
+foreach(FLAG ${template_USE_FLAGS})
+	add_definitions(-D${FLAG})
+endforeach()
+
+set(LASTools_PATH @LASTools_PATH@)
+set(template_IN_FIND)
+
+template_config_target(${template_FIND_COMPONENTS})
+
+template_export_target()

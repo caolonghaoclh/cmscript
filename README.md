@@ -1,7 +1,10 @@
 # cmscript
-this program is an open-source, cross-platform pakcage whitch consists of some cmake scripts frequently used. 'cmscript' is the abbreviation of "cmake script". It is designed to avoid writing simple cmake script repeatedly.
+this is an open-source, cross-platform library.&nbsp;it basically consists of cmake scripts which are frequently used.</br> the name 'cmscript' is the abbreviation of "cmake script" which is designed to avoid coding simple cmake </br> scripts repeatedly when i need to make a new project.
+## Caution
+the methods i want to express are suitable for the people who knows the basical knowledge of cmake syntax
 ## Introduction
-this package not contains any c++/c source file, For installing, you just need execute the commend "cmake ..&& sudo make install". after that, the cmake configuration files will be generated in the current folder of project.
+this package not includes any c++/c source file, For installing it, you just need execute the command </br> "cmake ..&& sudo make install" at terminal.&nbsp;then the cmake configuration files are generated automatically </br>
+under the root folder.&nbsp;specially the file Findcmscript.cmake is copied to the path recorded by the expression </br> "${CMAKE_ROOT}/Modules".
 ## Specific Description
 * cmake/test this folder in which we can store individual test files is unimportant. however you can write temporary scripts to verify the scripts issued. you can invoke 'bm_script_test()' to make it effective.
 * cmscript.cmake contains independent scripts which are widely used.
@@ -12,6 +15,6 @@ this package not contains any c++/c source file, For installing, you just need e
 * entry.cmake understand this as the logical entry.
 * msvc.cmake characteristic configurations for msvc compiler
 * packages.cmake find package
-* set.cmake 
-* target.cmake 
-* thirdlib.cmake 
+* set.cmake
+* target.cmake
+* thirdlib.cmake
